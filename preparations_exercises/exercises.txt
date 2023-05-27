@@ -1,0 +1,15 @@
+5. substring - instance method
+   String
+   create - static method
+   Object
+   fromCharCode - static method
+   String
+   slice - instance method
+   Array String
+   toString - instance method
+   Number String Array Object
+   
+6. index, lazyDog, operand2
+7. index, CatName, lazyDog, operand2
+8. BIG_NUMBER
+9. snake_case, quick_fox, 1stCharacter

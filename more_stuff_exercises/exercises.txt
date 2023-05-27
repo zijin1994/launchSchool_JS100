@@ -1,0 +1,16 @@
+q1:
+[1,4,3]
+
+q2:
+in function hello, line 4, variable greeting is not defined.
+So invoking hello at line 13 gives the following stack trace.
+
+q5:
+return each word's length in reverse order in a list.
+
+
+q7:
+It catches error and let programmer deal with it, let code after and before run without problem.
+
+q10:
+5, since ++ coerces to Number, and increase by one, but y++ returns before increase.

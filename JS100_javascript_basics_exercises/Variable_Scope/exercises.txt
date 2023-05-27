@@ -1,0 +1,29 @@
+what's my value?:
+undefined, since var gets hoisted to the top.
+
+what's my value?:
+referenceError, let will be hoisted to the top of block but stay in a dead zone until it is assgined.
+
+what's my value?:
+referenceError, since let is block scoped and cannot be accessed outside.
+
+what's my value?:
+1
+
+what's my value?:
+referenceError, since line 6 shadows line2, and we try to log a before assgining the value.
+
+what's my value?:
+false
+
+what's my value?:
+1
+
+what's my value?:
+2
+
+what's my value?:
+TypeError, since a is a const and cannot be reassgined.
+
+what's my value?:
+{ firstname: Jane, lastname: Doe }, since function modifiy a's property

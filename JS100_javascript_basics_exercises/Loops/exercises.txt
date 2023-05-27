@@ -1,0 +1,3 @@
+Do...While:
+first while loop will not log anything since condition counter > 0 is never true.
+second while log woooot! once since code inside do will always run once.

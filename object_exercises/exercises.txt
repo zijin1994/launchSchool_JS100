@@ -1,0 +1,47 @@
+q1:
+person.name
+person['name']
+
+q2:
+all of them. js coerces them to string.
+
+q3:
+primitives:
+"foo", 3.1415, false, undefined
+objects:
+[], {}, function
+neither:
+foo
+
+q7:
+no, since object.keys returns own keys, for/in will iterate over own keys + prototype keys
+
+q9:
+hi, hello (string inmutable, qux does not change)
+
+q10:
+p: 1, 2, "a", "b", false, null;
+obj: [] [], [], {}
+
+q11:
+obj.bar[3].xyz = 606;
+
+q14:
+variables:
+hello, greeting, name, xyzzy, howdy, foo (property names are not variables)
+property names:
+a,b,c,d, 0, 1, 2 (array index)
+p:
+1,2,3,4,5," ", hi, grace, a, b, c, d, 0, 1, 2 (property names and array index are strings)
+obj:
+hello, xyzzy, { }, [], {}
+
+q15:
+variables:
+bar, arg1, arg2, foo, qux, result
+property names:
+abc, def, ghi, jkl mno, pdr, 0, 1, 2, 3, 0, 1, 2
+p:
+Hello, abc, def, ghi, jkl, mno, pdr, 1,2,3,4,5,6, null, NaN, 0,1,2,3,0,1,2, Victor, Antonina
+obj:
+bar, {}, [], []

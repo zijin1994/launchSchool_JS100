@@ -1,0 +1,18 @@
+Truthy vs Falsy:
+'', 0, undefined, null, false, NaN, -0, 0n.
+
+switch:
+neigh, tweet tweet, *cricket*
+
+logical conditions 1:
+Yes!
+
+logical conditions 2:
+No...
+
+logical conditions 3:
+$3.99.
+
+Are we moving:
+True
+We need (). since we evaluate && first, which returns false, then we evaluate false || true, which gives true.

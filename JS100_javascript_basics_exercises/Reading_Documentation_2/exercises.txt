@@ -1,0 +1,20 @@
+Data Types:
+String, Number, Boolean, Null, Undefined, (BigInt ES9, Symbol ES6)
+
+Date.now():
+returns the number of milliseconds elapsed since the epoch, which is midnight of jan 1st, 1970.
+
+Which year is this?
+getYear() returns year - 1900, getFullYear() returns year. Use getFullYear.
+
+Array.prototype.join():
+0-1 argument, if no argument was given, it will join with ",", otherwise it will join with the given separator. Any extra argument will be ignored.
+
+String Concatenation:
+We can use "+", concat(), push into array and join().
+
+SyntaxError:
+need a () after if and before {.
+
+TypeError:
+.length is not a function but a property of tweet. So tweet.length > 100 instead.

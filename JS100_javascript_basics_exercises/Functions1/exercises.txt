@@ -1,0 +1,2 @@
+Display Division:
+it would not log anything since the function is not invoked, should add parentheses after multiplesOfThree.

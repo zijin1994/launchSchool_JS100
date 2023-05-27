@@ -1,0 +1,42 @@
+q6:
+function arguments: 2, 3, 4
+
+function body: {
+  let result = num1 * num2 * num3;
+  return result;
+}
+
+function declaration: function multiplyNumbers(num1, num2, num3) {
+  let result = num1 * num2 * num3;
+  return result;
+}
+
+function invocation: multiplyNumbers(2, 3, 4);
+
+function name: multiplyNumbers
+
+function parameters: num1, num2, num3
+
+function return value: product
+
+names of all variables in this program: result, num1, num2, num3, product, multiplyNumbers
+
+q7:
+Hello, undefined
+
+q8:
+42, 3.1415
+
+q9:
+mutiply, left, right
+product
+getNumber, prompt
+parseFloat, question
+console (log is a property name, not variable name)
+
+q10:
+global: multiply, getNumber, parseFloat, question, console, left, right (outside ones)
+local: left, right, product, prompt
+
+q11: no, the left and right on line 1-2 are local variables because they are parameters of function multiply.
+left and right on line 10-12 are global variables which store the return values of functions getNumber.

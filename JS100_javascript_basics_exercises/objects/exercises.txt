@@ -1,0 +1,6 @@
+Dot Notation vs Bracket Notation:
+{ prefix: 'Pacific' }
+{ Indian: 'Pacific' }
+
+Is it true?
+Because let in will iterate over keys of obj, which are always strings, so line 11 is 'true' === true, which is false.
