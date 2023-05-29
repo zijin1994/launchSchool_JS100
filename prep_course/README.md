@@ -1,1 +1,1 @@
-# launchSchool_JS100
+# launchSchool_JS100 prep course
