@@ -1,0 +1,27 @@
+{
+  "english": {
+    "greeting": "Welcome to Calculator!",
+    "goodbye": "Thank you for using calculator!",
+    "firstNumber": "What is the first number?",
+    "secondNumber": "What is the second number?",
+    "invalidNumber": "Hmm... that doesn't look like a valid number.",
+    "operation": "What operation would you like to perform?\n1) Add 2) Subtract 3) Multiply 4) Divide",
+    "invalidOperation": "Must choose 1, 2, 3 or 4",
+    "anotherCalculation": "Do you want to perform another calculation?\ny) Yes n) No",
+    "invalidInput": "Please enter a valid input!",
+    "result": "The result is: "
+  },
+  "chinese": {
+    "greeting": "欢迎使用计算器!",
+    "goodbye": "感谢使用!",
+    "firstNumber": "请输入第一个数字：",
+    "secondNumber": "请输入第二个数字：",
+    "invalidNumber": "无效数字，请重新输入！",
+    "operation": "请选择运算种类\n1) 加法 2) 减法 3) 乘法 4) 除法",
+    "invalidOperation": "需要输入1-4来完成运算，请重新输入：",
+    "anotherCalculation": "是否需要继续进行运算？\ny) 是 n) 否",
+    "invalidInput": "请输入正确指令！",
+    "result": "答案是："
+  }
+
+}

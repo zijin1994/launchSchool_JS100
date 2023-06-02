@@ -1,0 +1,141 @@
+1.a function that returns the sum of two numbers
+
+Given two input numbers from user.
+-convert both from strings to number and assign them to two variables.
+-add them together and return the added value.
+
+START
+
+#Given two input called inputOne and inputTwo
+
+SET numberOne = number value of inputOne
+SET numberTwo = number value of inputTwo
+PRINT numberOne + numberTwo
+
+END
+
+2.a function that takes an array of strings, and returns a string that is all those strings concatenated together
+
+Given a collection of strings.
+
+Initialize an empty string as a placeholder.
+
+Iterate through the collection one by one.
+  - concat the current string to the placeholder.
+
+After iteration, return the placeholder string.
+
+START
+
+#Given a array of string called 'strings'.
+
+SET resultString = ''
+SET iterator = 0
+WHILE iterator < length of strings
+  SET currentString = value in strings collection at space iterator
+  resultString = resultString + currentString
+  iterator = iterator + 1
+  
+PRINT resultString
+
+END
+
+3. a method that takes an array of integers, and returns a new array with every other element from the original array, starting with the first element.
+
+Given a collection of numbers.
+
+Initialize an empty array as the result placeholder.
+
+Iterate through the collection one by one.
+  -If the current index value is odd, skip to the next iteration.
+  -Otherwise, add the current number to result array.
+
+return the result arrray after iteration.
+
+START
+
+#Given a collection of number as 'numbers'.
+
+SET index = 0
+SET result = empty array
+
+WHILE index < length of numbers
+  IF index is even
+    add value in numbers collection at space 'index' to result
+  ELSE
+    skip to the next iteration
+
+  index = index + 1
+
+PRINT result
+
+END
+
+4. a function that determines the index of the 3rd occurrence of a given character in a string. For instance, if the given character is 'x' and the string is 'axbxcdxex', the function should return 6 (the index of the 3rd 'x'). If the given character does not occur at least 3 times, return null.
+
+Given a string, and a character.
+Initialize a counter number equals to 3.
+
+Iterate through the string's character one by one.
+  - if the current character equals the given character
+    - counter decrease by 1
+    - if the counter is 0
+      - return the current index
+  - else just skip to next iteration
+
+If code gets to here, meaning we never meet the case where counter is zero, then return null.
+
+START
+
+#Given a string 'string' and a character 'char'
+
+SET index = 0
+SET counter = 3
+
+WHILE index < length of the string
+  IF value in string at space 'index' = char
+    counter = counter - 1
+    IF counter = 0
+      PRINT index
+  index = index + 1
+        
+PRINT null
+
+END
+
+5. a function that takes two arrays of numbers and returns the result of merging the arrays. The elements of the first array should become the elements at the even indexes of the returned array, while the elements of the second array should become the elements at the odd indexes.
+
+
+Given two collections of arrays.
+
+Initialize an empty array to store merged arrays.
+Iterate through the first array
+  -store every value in the empty array at index 2 times there own index in the first array.
+Iterate through the second array
+  -store every value in the initialized array at index 2 times there own index in the first array plus 1.
+
+return the array.
+
+START
+
+#Given two collections of numbers 'numbersOne'. 'numbersTwo'
+
+SET result = []
+SET index = 0
+WHILE index < length of 'numbersOne'
+  result[index * 2] = value in numbersOne at space 'index'
+  index = index + 1
+  
+index = 0
+WHILE index < length of 'numbersTwo'
+  result[index * 2 + 1] = value in numbersTwo at space 'index'
+  index = index + 1
+
+PRINT result
+
+END
+
+
+  
+
+
