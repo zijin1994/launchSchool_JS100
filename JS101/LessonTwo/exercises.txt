@@ -1,0 +1,43 @@
+variable scope
+q1:
+10
+q2:
+It will log 5, 10. Since num is accessible in myFunc, so after involing myFunc, it logs 5, then reassign num to 10, then log 10 after.
+q3:
+5, since the num in myFunc is a different local variable declarization and initialization, console.log logs the global num, which is 5.
+q4:
+It will log reference Error, since we try to log num before initialization.(Although let also hoists to the top of the scope, but it stays in a dead zone until we initialize it, if we use var here, then it would log 10 then 5).
+q5:
+5, since num is a different local variable inside myFunc with the same name as the global num, which blocks access to the global variable.
+q6:
+3. Since while loop keeps running until num = 3.
+q7:
+nothing, it is a infinite loop. since the global num will stay to be 1, the changed one is the newly initialized local num.
+
+object vs primitive values
+q1:
+Hello. Since myWord is a string, which is primitive, we cannot change it. myWord.concat will return a new string, here we dont do anything with it.
+q2:
+It will log Hello * 3. Again, all the methods return a new string, and we dont do anything on them.
+q3:
+[Hello, Goodbye]. Since myWords is an array, which is an object, and mutable.
+q4:
+[Hello]. Since Array.prototype.concat returns a new array, and does not change the existing array.
+q5:
+[Hello]. since myWords[0] is a string, calling toUpperCase on it will not change it but return a new string with all upercase letters, and we dont do anything with the returned string.
+q6:
+[HELLO]. Since we reassign myWords[0] to HELLO, which mutate myWords.
+
+variables as pointers
+q1:
+Hello, Hello. Since primitive values are stored in the memory directly, myOtherWord is in a different memory location with value 'Hello'.
+q2:
+Goodbye, Hello. Since they are two different strings in different memory locations, reassign myWord does not affect myOtherWord.
+q3:
+[Hi, Goodbye] * 2. Since myOtherWords point to myWords, which means the value gets stored in myOtherWords is equal to what is stored in myWords, and it is the memory address of the array. They are both pointing to the same array.
+q4:
+[Hi, Bye], [Hello, Goodbye]. Since myWords gets reassign to the reference of a new array, but myOtherWords still references the original array.
+q5:
+[Hi, Goodbye], Hello. Since myWord gets assigend to a string, and we mutate the array, reassign first element to Hi, which does not affect myWord.
+q6:
+[Hi, Goodbye], Hello. Again, we reassign myWords[0] to Hi, which is a string value, then changing myWord to hello, which does not affect what was stored in myWords.

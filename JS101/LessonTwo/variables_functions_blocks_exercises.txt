@@ -1,0 +1,21 @@
+q1:
+[red,green,blue,yellow].Here we are dealing with pass by reference. When function gets invoked, a reference of colors array gets passed in and assigned to the function scoped colors, so mutating colors will affect the original array.
+q2:
+[red, green, blue, undefined]. Since did not pass the second argument when invoking function, the function scoped color is undefined.
+q3:
+[red, green, blue, purple, pink]. Since we invoked function twice, and both time colors refer to the same array, each time we append color to it, the result array would have two additional elements in it.
+q4:
+[red, green, blue, purple, pink]. newColors gets assigned to return value of function invokation, which is a reference to the updated colors array. Then we invoke function again, this time passing in newColors, which again is pass by reference.
+So the whole time we are essentially dealing with the same array. Therefore logging colors will output the updated array.
+q5:
+[red, green, blue]. First we invoke removeColor, and pass in a reference of colors array as an argument. Inside function removeColor, we have a function scoped colors parameter, which is assigned to the same reference array as the global colors variable.
+Then we remove the last element from array and reassign the global color variable to it, which means color now points to value 'blue' instead of 'purple'. Finally we return colors, and assign newColors to it, so that now newColors also references the same
+array as colors. Then, we invoke addColor, passing in a reference of colors array, and value of color, which is 'blue' in it. Then we append 'blue' to colors, which is a function scoped variable references the same array as the global scoped colors variable.
+Finally we return colors but do not do anything with it. Hence when we log newColors, it will produce [red, green, blue].
+q6:
+hello!!!, Hello, hello!!! First we declare and initialize word to value 'hello'. Then we invoke capitalize function and pass in word as an argument. However in capitalize we do not declare an parameter, so the argument gets ignored. Then we look for word from outer scope,
+return a new string Hello, which does nothing to the global word. Then we initialize capitalizedWord to be the return value of function capitalize, which is Hello. We then invoke exclaim function with cap as argument, again we do not declare any parameters, so it gets ignored.
+Here is the tricky part. function exclaim returns word += '!!!'. This line does two things, first it reassign the global word to word!!!, then it returns the value of it. Hence, exclaimWord gets assigned to value 'word!!!', and after invoking exclaim, word now equals word!!! too.
+q7:
+hello, Hello, Hello!!!. There are two differences between this one and q6. First, both functions now use the arguments that get passed in. For function capitalize, the only thing changes is that word now is a function scoped variable that equals 'hello'. It still returns Hello and has
+no effects on the global word variable. For function exclaim, we now pass in value Hello, and assign function scoped word to it. Now that we are dealing with local variable word, reassign it to Hello!!! does not affect to global word.

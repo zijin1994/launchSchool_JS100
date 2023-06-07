@@ -1,0 +1,10 @@
+q1:
+It will log Hello, Hello. Since myWord gets passed to function, so word now equals Hello, but word is a different local variable, so reassign it to upperCase does not affect myWord.
+q2:
+Hello, HELLO. Although we are still dealing with primitive argument, this time, we return the value of word from the function call and reassign myWord to it.
+q3:
+Hello, Hello, HELLO. This is just the combination of q1 and q2, same concept.
+q4:
+[Hello, Goodbye], [Hi, Goodbye]. Since we are passing an array as an argument to function, which is pass by reference, so words here reference the same memory location, which is the array myWords point to.
+q5:
+[Hello, Goodbye] * 2. Here, words gets reassign to a different array, which does not affect myWords since they are in different places in memory.
