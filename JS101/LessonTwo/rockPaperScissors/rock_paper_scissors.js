@@ -33,7 +33,7 @@ function resetScore() {
 }
 
 function displayScore() {
-  console.log(`Current score is: User: ${MATCH_SCORE[0]}, Computer ${MATCH_SCORE[1]}`);
+  console.log(`Current score is: User: ${MATCH_SCORE[0]}, Computer: ${MATCH_SCORE[1]}`);
 }
 
 //add point to user/computer.
@@ -61,6 +61,11 @@ function isValidInput(choice) {
 function toFullLengthInput(choice) {
   let choices = VALID_CHOICES.filter(element => element[0] === choice);
   return choices;
+}
+
+//validate 's' input, also handles the case where user inputs 1 or 2.
+function isSpockOrScissors(choice) {
+  return ['scissors', 'spock', '1', '2'].includes(choice);
 }
 
 //handle 's' input case where user enters 1 or 2 instead of full name of choice.
@@ -118,7 +123,7 @@ while (playAgain && !hasGrandWinner()) {
       prompt("There are two choices starting with letter 's', pick one: 1) scissors 2) spock");
       choice = question();
 
-      while (!['scissors', 'spock', '1', '2'].includes(choice)) { // check if user input 1 or 2 or the full name of choice. (pretty lazy approach, but since there are only 4 possible choices, it is fine imo)
+      while (!isSpockOrScissors(choice)) { // check if user input 1 or 2 or the full name of choice.
         prompt("That's not a valid choice");
         choice = question();
       }
