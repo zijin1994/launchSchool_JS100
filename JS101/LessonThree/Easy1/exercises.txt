@@ -1,0 +1,7 @@
+q1:
+No it will not rasie an error.
+Bonus:
+undefined.
+
+q5:
+true, false. Since for false == "0", it becomes 0 == "0", then 0 == 0,  which is true.
