@@ -24,14 +24,13 @@ function printGrandWinner(userScore, computerScore) {
   console.log("********************");
   if (userScore === WINNING_SCORE) {
     console.log(`Congraduations! You are the grand winner!\nThe final score is: ${userScore} : ${computerScore}`);
-  }
-  else {
+  } else {
     console.log(`Sorry! Computer is the grand winner!\nThe final score is: ${userScore} : ${computerScore}`);
   }
 }
 
 function resetScore() {
-  return [0, 0]
+  return [0, 0];
 }
 
 function displayScore(userScore, computerScore) {
@@ -41,8 +40,7 @@ function displayScore(userScore, computerScore) {
 function addPoint(userScore, computerScore, result) {
   if (result === YOU_WON) {
     userScore += 1;
-  }
-  else if (result === COMPUTER_WON) {
+  } else if (result === COMPUTER_WON) {
     computerScore += 1;
   }
   return [userScore, computerScore];
@@ -73,8 +71,7 @@ function validateUserChoice(choice) {
 
     if (referToMany(choices)) { // handle 's' input
       choice = sInputHandler();
-    }
-    else { // otherwise, there is only one value in choices array, simply assign it to choice.
+    } else { // otherwise, there is only one value in choices array, simply assign it to choice.
       choice = choices[0];
     }
   }
@@ -110,8 +107,7 @@ function validateSpockOrScissors(choice) {
 function numberInputHandler(choice) {
   if (choice === '1') {
     return 'scissors';
-  }
-  else {
+  } else {
     return 'spock';
   }
 }
@@ -146,11 +142,9 @@ function isDraw(choice, computerChoice) {
 function matchResult(choice, computerChoice) {
   if (isDraw(choice, computerChoice)) {
     return TIE;
-  }
-  else if (userWins(choice, computerChoice)) {
+  } else if (userWins(choice, computerChoice)) {
     return YOU_WON;
-  }
-  else {
+  } else {
     return COMPUTER_WON;
   }
 }
@@ -160,11 +154,9 @@ function displayWinner(choice, computerChoice, result) {
 
   if (result === TIE) {
     console.log("It is a tie!");
-  }
-  else if (result === YOU_WON) {
+  } else if (result === YOU_WON) {
     console.log("You win!");
-  }
-  else {
+  } else {
     console.log("Computer wins!");
   }
 }
